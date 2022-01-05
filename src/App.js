@@ -10,8 +10,17 @@ import './App.css'
 export const App = () => {
   const [dogUrl, setDogUrl] = React.useState('https://images.dog.ceo/breeds/hound-afghan/n02088094_4521.jpg');
 
-  const onClick = () => {
-    setDogUrl(() => { return 'https://images.dog.ceo/breeds/hound-english/n02089973_1132.jpg' });
+  const updateImage = () => {
+    fetch("https://dog.ceo/api/breeds/image/random")
+      .then(res => res.json())
+      .then(
+        (result) => {
+          setDogUrl(result.message);
+        },
+        (error) => {
+          console.log(error)
+        }
+      );
   }
 
   return (
@@ -22,7 +31,7 @@ export const App = () => {
       <p>犬の画像を表示するサイトです</p>
       <img src={dogUrl}></img>
       <div>
-        <button onClick={onClick}>
+        <button onClick={updateImage}>
           更新
         </button>
       </div>
