@@ -24,9 +24,9 @@ export const App = () => {
   }
 
   return (
-    <div>
+    <>
       <header>
-        <h1>Dog App</h1>
+        <h1 className='title'>Dog App</h1>
       </header>
       <p>犬の画像を表示するサイトです</p>
       <img src={dogUrl}></img>
@@ -35,6 +35,6 @@ export const App = () => {
           更新
         </button>
       </div>
-    </div>
+    </>
   );
 }

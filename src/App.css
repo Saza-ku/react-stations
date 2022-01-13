@@ -1,0 +1,16 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+}
+
+header {
+    background-color: #C4C4C4;
+}
+
+#root {
+    margin: 0;
+}
+
+.title {
+    margin: 0;
+}
