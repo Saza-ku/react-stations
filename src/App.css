@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background-color: #C4C4C4;
+    background-color: #5ac0c4;
 }
 
 #root {
@@ -13,4 +13,15 @@ header {
 
 .title {
     margin: 0;
+}
+
+.description {
+    background: #dfefff;
+    box-shadow: 0px 0px 0px 5px #dfefff;
+    border: dashed 2px white;
+    padding: 0.2em 0.5em;
+}
+
+.image {
+    box-shadow: 20px 20px 0 #22f3a3;
 }

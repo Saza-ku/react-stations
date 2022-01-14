@@ -28,8 +28,8 @@ export const App = () => {
       <header>
         <h1 className='title'>Dog App</h1>
       </header>
-      <p>犬の画像を表示するサイトです</p>
-      <img src={dogUrl}></img>
+      <p className='description'>犬の画像を表示するサイトです</p>
+      <img src={dogUrl} className='image'></img>
       <div>
         <button onClick={updateImage}>
           更新
